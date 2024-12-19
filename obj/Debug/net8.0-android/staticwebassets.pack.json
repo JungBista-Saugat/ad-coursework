@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\coursework-ad\\ad-coursework\\ad-coursework\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\ad-coursework.styles.css",
+      "PackagePath": "staticwebassets\\ad-coursework.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\coursework-ad\\ad-coursework\\ad-coursework\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\coursework-ad\\ad-coursework\\ad-coursework\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\coursework-ad\\ad-coursework\\ad-coursework\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\coursework-ad\\ad-coursework\\ad-coursework\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\coursework-ad\\ad-coursework\\ad-coursework\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.ad-coursework.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.ad-coursework.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.build.ad-coursework.props",
+      "PackagePath": "build\\ad-coursework.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildMultiTargeting.ad-coursework.props",
+      "PackagePath": "buildMultiTargeting\\ad-coursework.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildTransitive.ad-coursework.props",
+      "PackagePath": "buildTransitive\\ad-coursework.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
