@@ -1,0 +1,21 @@
+[
+    {
+        "Id": 1,
+        "Name": "User",
+        "PasswordHash": "hashedpassword12345",
+        "CashIns": [
+            {
+                "Id": 1,
+                "Amount": 10,
+                "Date": "2024-12-25T12:00:00Z"
+            }
+        ],
+        "CashOuts": [
+            {
+                "Id": 1,
+                "Amount": 5,
+                "Date": "2024-12-25T13:00:00Z"
+            }
+        ]
+    }
+]

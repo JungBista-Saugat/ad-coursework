@@ -1,0 +1,253 @@
+﻿@page "/dashboard"
+@using EasyCash.Models
+@inject IJSRuntime JSRuntime
+@using EasyCash.Services
+@inject EasyCash.Services.TransactionService TransactionService
+@inject NavigationManager NavigationManager
+@inject UserService UserService
+
+<link href="/css/common.css" rel="stylesheet">
+
+<h3>Welcome, @UserService.CurrentUser?.Name! Here's your Dashboard</h3>
+
+
+<div>
+    @if (UserService.CurrentUser == null)
+    {
+        <p>You are not authorized to access this page. Redirecting to login...</p>
+    }
+    else
+    {
+        <h3>Welcome to your Dashboard</h3>
+        <!-- Dashboard content here -->
+        <button @onclick="Logout">Logout</button>
+    }
+</div>
+
+<div class="dashboard">
+
+    <div class="summary-section d-flex justify-content-around mb-4">
+        <div class="summary-card">
+            <h5>Total Inflows</h5>
+            <p class="amount text-primary">@TotalInflows.ToString("C")</p>
+        </div>
+        <div class="summary-card">
+            <h5>Total Outflows</h5>
+            <p class="amount text-danger">@TotalOutflows.ToString("C")</p>
+        </div>
+        <div class="summary-card">
+            <h5>Pending Debts</h5>
+            <p class="amount text-warning">@PendingDebts.ToString("C")</p>
+        </div>
+        <div class="summary-card">
+            <h5>Remaining Balance</h5>
+            <p class="amount text-success">@RemainingBalance.ToString("C")</p>
+        </div>
+    </div>
+
+    <div class="row stats-section">
+        <div class="col-md-6">
+            <h4>Transactions Summary</h4>
+            <table class="table table-bordered">
+                <tr><th>Total Transactions</th><td>@TotalTransactions</td></tr>
+                <tr><th>Net Transaction Value</th><td>@TotalTransactionValue.ToString("C")</td></tr>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <h4>Statistics</h4>
+            <table class="table table-bordered">
+                <tr><th>Highest Cash Inflow</th><td>@HighestInflow.ToString("C")</td></tr>
+                <tr><th>Lowest Cash Inflow</th><td>@LowestInflow.ToString("C")</td></tr>
+                <tr><th>Highest Cash Outflow</th><td>@HighestOutflow.ToString("C")</td></tr>
+                <tr><th>Lowest Cash Outflow</th><td>@LowestOutflow.ToString("C")</td></tr>
+                <tr><th>Highest Cash Debt</th><td>@HighestDebt.ToString("C")</td></tr>
+                <tr><th>Lowest Cash Debt</th><td>@LowestDebt.ToString("C")</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="filter-section py-4">
+        <h4>Filter Transactions</h4>
+        <div class="d-flex flex-wrap gap-3">
+            <input type="date" @bind="SelectedFromDate" class="form-control" placeholder="From Date">
+            <input type="date" @bind="SelectedToDate" class="form-control" placeholder="To Date">
+            <input type="text" @bind="SelectedTag" class="form-control" placeholder="Search by Tag">
+            <select @bind="SelectedType" class="form-control">
+                <option value="">All Types</option>
+                <option value="Credit">Credit</option>
+                <option value="Debit">Debit</option>
+                <option value="Debt">Debt</option>
+            </select>
+        </div>
+        <button class="btn btn-success mt-3" @onclick="ApplyFilter">Apply Filters</button>
+    </div>
+
+    <!-- Pending Debts Section -->
+    <div class="pending-debts-section py-4">
+        <h4>Pending Debts</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (PendingDebtTransactions.Any())
+                {
+                    foreach (var debt in PendingDebtTransactions)
+                    {
+                        <tr>
+                            <td>@debt.Title</td>
+                            <td>@debt.Date.ToShortDateString()</td>
+                            <td>@debt.Amount.ToString("C")</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="3">No pending debts.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Transaction History Section -->
+    <div class="transaction-history-section py-4">
+        <h4>Transaction History</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var transaction in Transactions)
+                {
+                    <tr>
+                        <td>@transaction.Title</td>
+                        <td>@transaction.Type</td>
+                        <td>@transaction.Date.ToShortDateString()</td>
+                        <td>@transaction.Amount.ToString("C")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+    private decimal TotalInflows;
+    private decimal TotalOutflows;
+    private decimal PendingDebts;
+    private decimal RemainingBalance;
+    private List<Transaction> Transactions = new();
+    private List<Transaction> PendingDebtTransactions = new();
+
+    private decimal HighestInflow;
+    private decimal LowestInflow;
+    private decimal HighestOutflow;
+    private decimal LowestOutflow;
+    private decimal HighestDebt;
+    private decimal LowestDebt;
+
+    private DateTime? SelectedFromDate;
+    private DateTime? SelectedToDate;
+    private string SelectedTag;
+    private string SelectedType;
+
+    private int TotalTransactions;
+    private decimal TotalTransactionValue;
+
+    private bool isRedirecting = false; // Track if redirection is in progress
+
+    // Get userId from the current logged-in user
+    private int UserId => UserService.CurrentUser?.Id ?? 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (UserService.CurrentUser == null)
+        {
+            isRedirecting = true;
+            await Task.Delay(2000);
+            NavigationManager.NavigateTo("/");
+        }
+        else
+        {
+            LoadDashboardData();
+        }
+    }
+
+    private void LoadDashboardData()
+    {
+        var allTransactions = TransactionService.GetTransactions(UserId).ToList();
+
+        TotalInflows = allTransactions.Where(t => t.Type == "Credit").Sum(t => t.Amount);
+        TotalOutflows = allTransactions.Where(t => t.Type == "Debit").Sum(t => t.Amount);
+        PendingDebts = TransactionService.CalculatePendingDebts(UserId);
+        RemainingBalance = TransactionService.CalculateBalance(UserId);
+
+        Transactions = allTransactions.OrderByDescending(t => t.Date).Take(5).ToList();
+        PendingDebtTransactions = allTransactions.Where(t => t.Type == "Debt" && !t.IsDebtCleared).ToList();
+
+        HighestInflow = allTransactions.Where(t => t.Type == "Credit").DefaultIfEmpty().Max(t => t?.Amount ?? 0);
+        LowestInflow = allTransactions.Where(t => t.Type == "Credit").DefaultIfEmpty().Min(t => t?.Amount ?? 0);
+        HighestOutflow = allTransactions.Where(t => t.Type == "Debit").DefaultIfEmpty().Max(t => t?.Amount ?? 0);
+        LowestOutflow = allTransactions.Where(t => t.Type == "Debit").DefaultIfEmpty().Min(t => t?.Amount ?? 0);
+        HighestDebt = allTransactions.Where(t => t.Type == "Debt").DefaultIfEmpty().Max(t => t?.Amount ?? 0);
+        LowestDebt = allTransactions.Where(t => t.Type == "Debt").DefaultIfEmpty().Min(t => t?.Amount ?? 0);
+
+        TotalTransactions = allTransactions.Count;
+        TotalTransactionValue = TotalInflows + PendingDebts - TotalOutflows;
+    }
+
+    private void ApplyFilter()
+    {
+        var allTransactions = TransactionService.GetTransactions(UserId).ToList();
+
+        if (SelectedFromDate.HasValue)
+        {
+            allTransactions = allTransactions.Where(t => t.Date >= SelectedFromDate.Value).ToList();
+        }
+
+        if (SelectedToDate.HasValue)
+        {
+            allTransactions = allTransactions.Where(t => t.Date <= SelectedToDate.Value).ToList();
+        }
+
+        if (!string.IsNullOrEmpty(SelectedType))
+        {
+            allTransactions = allTransactions.Where(t => t.Type == SelectedType).ToList();
+        }
+
+        if (!string.IsNullOrEmpty(SelectedTag))
+        {
+            allTransactions = allTransactions.Where(t => t.Tags.Contains(SelectedTag, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+
+        TotalInflows = allTransactions.Where(t => t.Type == "Credit").Sum(t => t.Amount);
+        TotalOutflows = allTransactions.Where(t => t.Type == "Debit").Sum(t => t.Amount);
+        PendingDebts = allTransactions.Where(t => t.Type == "Debt" && !t.IsDebtCleared).Sum(t => t.Amount);
+        RemainingBalance = TotalInflows - TotalOutflows;
+
+        Transactions = allTransactions.OrderByDescending(t => t.Date).Take(5).ToList();
+        PendingDebtTransactions = allTransactions.Where(t => t.Type == "Debt" && !t.IsDebtCleared).ToList();
+
+        TotalTransactions = allTransactions.Count;
+        TotalTransactionValue = TotalInflows + PendingDebts - TotalOutflows;
+    }
+
+    private void Logout()
+    {
+        UserService.Logout();
+        NavigationManager.NavigateTo("/");
+    }
+}
+

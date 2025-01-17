@@ -1,0 +1,225 @@
+﻿/* General Styles */
+body {
+    background-color: #F9E6CF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.top-row {
+    background-color: #69247C;
+    padding: 10px;
+}
+
+    .top-row a.navbar-brand {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+        .top-row a.navbar-brand:hover {
+            color: #DA498D;
+        }
+
+.nav-link {
+    color: #FAC67A;
+    text-decoration: none;
+}
+
+    .nav-link:hover {
+        background-color: #DA498D;
+        color: white;
+        padding: 5px;
+    }
+
+.bi {
+    color: inherit;
+    margin-right: 5px;
+}
+
+/* Dashboard Styles */
+.dashboard {
+    padding: 20px;
+}
+
+.summary-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAC67A;
+    border: 1px solid #69247C;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.summary-card {
+    background-color: #F9E6CF;
+    border: 1px solid #DA498D;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+    .summary-card h5 {
+        color: #69247C;
+        margin-top: 0;
+    }
+
+    .summary-card p.amount {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+.stats-section, .filter-section, .pending-debts-section, .transaction-history-section {
+    background-color: #FAC67A;
+    border: 1px solid #69247C;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+    .stats-section h4, .filter-section h4, .pending-debts-section h4, .transaction-history-section h4 {
+        color: #69247C;
+        margin-bottom: 10px;
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #DA498D;
+    padding: 8px;
+}
+
+th {
+    background-color: #DA498D;
+    color: white;
+}
+
+.filter-section input, .filter-section select {
+    background-color: #F9E6CF;
+    border: 1px solid #DA498D;
+    color: #69247C;
+}
+
+.filter-section .btn-success {
+    background-color: #DA498D;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .filter-section .btn-success:hover {
+        background-color: #69247C;
+    }
+
+
+add-transaction-page .card {
+    background-color: #F9E6CF;
+    border: 1px solid #DA498D;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.card-header {
+    background-color: #69247C;
+    color: white;
+    padding: 10px;
+}
+
+.form-label {
+    color: #69247C;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #FAC67A;
+    border: 1px solid #DA498D;
+    color: #69247C;
+}
+
+.btn-success {
+    background-color: #69247C;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background-color: #DA498D;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.alert-success {
+    background-color: #FAC67A;
+    color: #69247C;
+    border: 1px solid #DA498D;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.alert-danger {
+    background-color: #DA498D;
+    color: white;
+    border: 1px solid #69247C;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Sort Transactions Page Styles */
+.sorttransactions .form-select, .sorttransactions .form-control {
+    background-color: #FAC67A;
+    border: 1px solid #DA498D;
+    color: #69247C;
+}
+
+.sorttransactions .btn-success {
+    background-color: #69247C;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Table Styles */
+.table {
+    background-color: #F9E6CF;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .table thead th {
+        background-color: #DA498D;
+        color: white;
+        border: 1px solid #DA498D;
+        padding: 8px;
+    }
+
+    .table tbody td {
+        border: 1px solid #DA498D;
+        padding: 8px;
+    }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        width: 100%;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+}

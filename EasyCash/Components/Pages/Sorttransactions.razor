@@ -1,0 +1,127 @@
+﻿@page "/sorttransactions"
+@using EasyCash.Models
+@using EasyCash.Services
+@inject TransactionService TransactionService
+@inject UserService UserService
+
+<link href="css/common.css" rel="stylesheet">
+
+<div class="sort-transaction-page">
+    <div class="sort-box">
+        <div class="sort-header">
+            <h4>Sort & Search Transactions</h4>
+        </div>
+        <form class="sort-form">
+            <div class="sort-field">
+                <label for="sortOrder" class="form-label">Sort Transactions</label>
+                <select id="sortOrder" @bind="SortOrder" required>
+                    <option value="" disabled>Select Sort Order</option>
+                    <option value="dateAsc">Date Ascending</option>
+                    <option value="dateDesc">Date Descending</option>
+                    <option value="amountAsc">Amount Ascending</option>
+                    <option value="amountDesc">Amount Descending</option>
+                </select>
+            </div>
+            <div class="sort-field">
+                <label for="searchTitle" class="form-label">Search by Title</label>
+                <input type="text" id="searchTitle" @bind="SearchTitle" placeholder="Enter title to search" />
+            </div>
+            <div class="sort-buttons">
+                <button type="button" class="btn-apply" @onclick="OnSortAndSearch">Apply Sort & Search</button>
+            </div>
+        </form>
+        <div class="transaction-list">
+            <h4>Filtered Transactions</h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Title</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Tags</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (FilteredTransactions != null && FilteredTransactions.Any())
+                        {
+                            @foreach (var transaction in FilteredTransactions)
+                            {
+                                <tr>
+                                    <td>@transaction.Date.ToShortDateString()</td>
+                                    <td>@transaction.Title</td>
+                                    <td>@transaction.Type</td>
+                                    <td>@transaction.Amount.ToString("C")</td>
+                                    <td>@transaction.Tags</td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="5" class="no-data">No matching transactions found.</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    private List<Transaction> SortedTransactions = new List<Transaction>();
+    private List<Transaction> FilteredTransactions = new List<Transaction>();
+    private string SortOrder;
+    private string SearchTitle;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadTransactionsAsync();
+    }
+
+    private async Task LoadTransactionsAsync()
+    {
+        // Assuming UserService.CurrentUser holds the current user's details
+        int userId = UserService.CurrentUser?.Id ?? 0;
+        SortedTransactions = TransactionService.GetTransactions(userId).ToList();
+        FilteredTransactions = SortedTransactions;
+    }
+
+    private void OnSortAndSearch()
+    {
+        ApplySorting();
+        ApplySearchFilter();
+    }
+
+    private void ApplySorting()
+    {
+        if (string.IsNullOrEmpty(SortOrder))
+            return;
+
+        SortedTransactions = SortOrder switch
+        {
+            "dateAsc" => SortedTransactions.OrderBy(t => t.Date).ToList(),
+            "dateDesc" => SortedTransactions.OrderByDescending(t => t.Date).ToList(),
+            "amountAsc" => SortedTransactions.OrderBy(t => t.Amount).ToList(),
+            "amountDesc" => SortedTransactions.OrderByDescending(t => t.Amount).ToList(),
+            _ => SortedTransactions
+        };
+    }
+
+    private void ApplySearchFilter()
+    {
+        if (string.IsNullOrWhiteSpace(SearchTitle))
+        {
+            FilteredTransactions = SortedTransactions;
+        }
+        else
+        {
+            FilteredTransactions = SortedTransactions
+                .Where(t => t.Title.Contains(SearchTitle, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+    }
+}

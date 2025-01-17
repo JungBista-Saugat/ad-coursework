@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\EasyCash.styles.css",
+      "PackagePath": "staticwebassets\\EasyCash.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\LoginReg.css",
+      "PackagePath": "staticwebassets\\css\\LoginReg.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\common.css",
+      "PackagePath": "staticwebassets\\css\\common.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.EasyCash.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.EasyCash.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.build.EasyCash.props",
+      "PackagePath": "build\\EasyCash.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildMultiTargeting.EasyCash.props",
+      "PackagePath": "buildMultiTargeting\\EasyCash.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-android\\staticwebassets\\msbuild.buildTransitive.EasyCash.props",
+      "PackagePath": "buildTransitive\\EasyCash.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

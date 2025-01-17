@@ -1,0 +1,428 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\components\\pages\\registerpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\components\\pages\\registerpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\components\\pages\\loginpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\components\\pages\\loginpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\components\\pages\\sorttransactions.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\components\\pages\\sorttransactions.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\components\\pages\\transactions.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\components\\pages\\transactions.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\components\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\components\\pages\\dashboard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\wwwroot\\css\\common.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\wwwroot\\css\\common.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\services\\transactionservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\services\\transactionservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\models\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\transactions.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\transactions.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\wwwroot\\css\\loginreg.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\wwwroot\\css\\loginreg.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\models\\debt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\models\\debt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\models\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\models\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\easycash.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\easycash.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\wwwroot\\css\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\wwwroot\\css\\bootstrap\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|c:\\users\\user\\onedrive - london metropolitan university\\desktop\\new ap\\easycash\\easycash\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{4E401C54-5198-42AE-AD59-BEE9684FE5C1}|EasyCash\\EasyCash.csproj|solutionrelative:easycash\\components\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dashboard.razor",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Pages\\Dashboard.razor",
+              "RelativeDocumentMoniker": "EasyCash\\Components\\Pages\\Dashboard.razor",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Pages\\Dashboard.razor",
+              "RelativeToolTip": "EasyCash\\Components\\Pages\\Dashboard.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T05:47:51.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sorttransactions.razor",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Pages\\Sorttransactions.razor",
+              "RelativeDocumentMoniker": "EasyCash\\Components\\Pages\\Sorttransactions.razor",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Pages\\Sorttransactions.razor",
+              "RelativeToolTip": "EasyCash\\Components\\Pages\\Sorttransactions.razor",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAIwHQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T05:59:38.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Transactions.razor",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Pages\\Transactions.razor",
+              "RelativeDocumentMoniker": "EasyCash\\Components\\Pages\\Transactions.razor",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Pages\\Transactions.razor",
+              "RelativeToolTip": "EasyCash\\Components\\Pages\\Transactions.razor",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAIwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T05:59:42.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "common.css",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\common.css",
+              "RelativeDocumentMoniker": "EasyCash\\wwwroot\\css\\common.css",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\common.css",
+              "RelativeToolTip": "EasyCash\\wwwroot\\css\\common.css",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAIwAYBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-16T12:17:27.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPage.razor",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Pages\\LoginPage.razor",
+              "RelativeDocumentMoniker": "EasyCash\\Components\\Pages\\LoginPage.razor",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Pages\\LoginPage.razor",
+              "RelativeToolTip": "EasyCash\\Components\\Pages\\LoginPage.razor",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAADcAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T12:10:19.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterPage.razor",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Pages\\RegisterPage.razor",
+              "RelativeDocumentMoniker": "EasyCash\\Components\\Pages\\RegisterPage.razor",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Pages\\RegisterPage.razor",
+              "RelativeToolTip": "EasyCash\\Components\\Pages\\RegisterPage.razor",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAFEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T05:46:46.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "EasyCash\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Services\\UserService.cs",
+              "RelativeToolTip": "EasyCash\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T05:47:55.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TransactionServices.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Services\\TransactionServices.cs",
+              "RelativeDocumentMoniker": "EasyCash\\Services\\TransactionServices.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Services\\TransactionServices.cs",
+              "RelativeToolTip": "EasyCash\\Services\\TransactionServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T06:39:25.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Models\\Transaction.cs",
+              "RelativeDocumentMoniker": "EasyCash\\Models\\Transaction.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Models\\Transaction.cs",
+              "RelativeToolTip": "EasyCash\\Models\\Transaction.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAtwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T05:57:45.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Models\\User.cs",
+              "RelativeDocumentMoniker": "EasyCash\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Models\\User.cs",
+              "RelativeToolTip": "EasyCash\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T05:52:59.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "EasyCash\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\MauiProgram.cs",
+              "RelativeToolTip": "EasyCash\\MauiProgram.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T15:36:13.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Routes.razor",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "EasyCash\\Components\\Routes.razor",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Routes.razor",
+              "RelativeToolTip": "EasyCash\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T03:47:53.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "EasyCash\\Components\\_Imports.razor",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\_Imports.razor",
+              "RelativeToolTip": "EasyCash\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-16T21:07:14.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\MainPage.xaml",
+              "RelativeDocumentMoniker": "EasyCash\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\MainPage.xaml",
+              "RelativeToolTip": "EasyCash\\MainPage.xaml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-16T15:32:54.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "users.json",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\users.json",
+              "RelativeDocumentMoniker": "EasyCash\\users.json",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\users.json",
+              "RelativeToolTip": "EasyCash\\users.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-16T15:38:40.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "transactions.json",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\transactions.json",
+              "RelativeDocumentMoniker": "EasyCash\\transactions.json",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\transactions.json",
+              "RelativeToolTip": "EasyCash\\transactions.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-16T15:38:37.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "EasyCash\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "EasyCash\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T05:46:16.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "EasyCash\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "EasyCash\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-05T06:00:55.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "LoginReg.css",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\LoginReg.css",
+              "RelativeDocumentMoniker": "EasyCash\\wwwroot\\css\\LoginReg.css",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\LoginReg.css",
+              "RelativeToolTip": "EasyCash\\wwwroot\\css\\LoginReg.css",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-16T19:13:20.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Debt.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Models\\Debt.cs",
+              "RelativeDocumentMoniker": "EasyCash\\Models\\Debt.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Models\\Debt.cs",
+              "RelativeToolTip": "EasyCash\\Models\\Debt.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAIwA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T12:23:45.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AppData.cs",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Models\\AppData.cs",
+              "RelativeDocumentMoniker": "EasyCash\\Models\\AppData.cs",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Models\\AppData.cs",
+              "RelativeToolTip": "EasyCash\\Models\\AppData.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T12:23:37.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EasyCash.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\EasyCash.csproj",
+              "RelativeDocumentMoniker": "EasyCash\\EasyCash.csproj",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\EasyCash.csproj",
+              "RelativeToolTip": "EasyCash\\EasyCash.csproj",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-16T15:32:33.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "EasyCash\\Components\\Layout\\MainLayout.razor.css",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\Components\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "EasyCash\\Components\\Layout\\MainLayout.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-16T11:46:47.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "app.css",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "EasyCash\\wwwroot\\css\\app.css",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "EasyCash\\wwwroot\\css\\app.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-16T12:06:37.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "EasyCash\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+              "ToolTip": "C:\\Users\\user\\OneDrive - London Metropolitan University\\Desktop\\new AP\\EasyCash\\EasyCash\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+              "RelativeToolTip": "EasyCash\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-16T12:06:47.393Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

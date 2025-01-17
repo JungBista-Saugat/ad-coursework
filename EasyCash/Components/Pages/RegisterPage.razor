@@ -1,0 +1,89 @@
+﻿@page "/register"
+@using EasyCash.Models
+@using EasyCash.Services
+@inject UserService UserService
+@inject NavigationManager NavigationManager
+
+<link href="/css/LoginReg.css" rel="stylesheet">
+
+<div class="register-container">
+    <div class="register-card">
+        <h2>Create Account</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text" @bind="Name" placeholder="Enter your full name" />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" @bind="Email" placeholder="Enter your email" />
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input id="password" type="password" @bind="Password" placeholder="Create a password" />
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input id="confirm-password" type="password" @bind="ConfirmPassword" placeholder="Confirm your password" />
+            </div>
+
+            <div class="form-footer">
+                <button type="button" class="btn" @onclick="HandleRegister">Register</button>
+            </div>
+        </form>
+        <a href="/login" class="link">Already have an account? Login</a>
+    </div>
+
+    @if (!string.IsNullOrEmpty(Message))
+    {
+        <p class="error-message">@Message</p>
+    }
+</div>
+
+@code {
+    private string Name = "";
+    private string Email = "";
+    private string Password = "";
+    private string ConfirmPassword = "";
+    private string Message = "";
+
+    private List<User> Users = new();
+
+    protected override void OnInitialized()
+    {
+        Users = UserService.LoadUsers();
+    }
+
+    private void HandleRegister()
+    {
+        if (Password != ConfirmPassword)
+        {
+            Message = "Passwords do not match.";
+            return;
+        }
+
+        if (Users.Any(u => u.Email?.Equals(Email, StringComparison.OrdinalIgnoreCase) == true))
+        {
+            Message = "An account with this email already exists.";
+            return;
+        }
+
+        var newUser = new User
+            {
+                Name = Name,
+                Email = Email,
+                PasswordHash = UserService.HashPassword(Password),
+                CreatedOn = DateTime.Now,
+            };
+
+        Users.Add(newUser);
+        UserService.SaveUsers(Users);
+
+        UserService.Login(newUser);
+        NavigationManager.NavigateTo("/dashboard");
+    }
+
+}

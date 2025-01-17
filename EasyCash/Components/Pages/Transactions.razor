@@ -1,0 +1,100 @@
+﻿@page "/transactions"
+@using EasyCash.Models
+@using EasyCash.Services
+@inject TransactionService TransactionService
+@inject NavigationManager NavigationManager
+@inject UserService UserService
+
+<link href="css/common.css" rel="stylesheet">
+
+<div class="add-transaction-page">
+    <div class="transaction-box">
+        <div class="transaction-header">
+            <h4>Transaction Details</h4>
+        </div>
+        <form @onsubmit="HandleAddTransaction" class="transaction-form">
+            <div class="transaction-field">
+                <label for="title" class="form-label">Transaction Title</label>
+                <input type="text" id="title" @bind="Transaction.Title" placeholder="Enter transaction title" required />
+            </div>
+            <div class="transaction-field">
+                <label for="type" class="form-label">Transaction Type</label>
+                <select id="type" @bind="Transaction.Type" required>
+                    <option value="" disabled selected>Select Type</option>
+                    <option value="Credit">Credit</option>
+                    <option value="Debit">Debit</option>
+                    <option value="Debt">Debt</option>
+                </select>
+            </div>
+            <div class="transaction-field">
+                <label for="amount" class="form-label">Amount</label>
+                <input type="number" id="amount" @bind="Transaction.Amount" placeholder="Enter amount" min="0" required />
+            </div>
+            <div class="transaction-field">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" id="date" @bind="Transaction.Date" required />
+            </div>
+            <div class="transaction-field">
+                <label for="tags" class="form-label">Tags</label>
+                <input type="text" id="tags" @bind="Transaction.Tags" placeholder="Enter tags separated by commas" />
+            </div>
+            <div class="transaction-field">
+                <label for="notes" class="form-label">Notes (Optional)</label>
+                <textarea id="notes" @bind="Transaction.Notes" placeholder="Add any notes"></textarea>
+            </div>
+            <div class="transaction-buttons">
+                <button type="submit" class="btn-receive">Save</button>
+            </div>
+        </form>
+        @if (ShowMessage)
+        {
+            <div class="alert @AlertClass">@Message</div>
+        }
+    </div>
+</div>
+
+
+@code {
+    private Transaction Transaction = new Transaction();
+    private bool ShowMessage = false;
+    private string AlertClass = "alert-success";
+    private string Message = "";
+
+    // Get userId from the current logged-in user
+    private int UserId => UserService.CurrentUser?.Id ?? 0;
+
+    private async Task HandleAddTransaction()
+    {
+        if (string.IsNullOrWhiteSpace(Transaction.Title) || string.IsNullOrEmpty(Transaction.Type))
+        {
+            ShowFeedback("Please fill all required fields.", "alert-danger");
+            return;
+        }
+
+        try
+        {
+            Transaction.Date = Transaction.Date == DateTime.MinValue ? DateTime.Now : Transaction.Date;
+
+            // Add userId as the first argument
+            TransactionService.AddTransaction(UserId, Transaction);
+            ShowFeedback("Transaction added successfully!", "alert-success");
+            Transaction = new Transaction(); // Reset form
+        }
+        catch (Exception ex)
+        {
+            ShowFeedback($"An error occurred: {ex.Message}", "alert-danger");
+        }
+    }
+
+    private void ShowFeedback(string message, string alertClass)
+    {
+        Message = message;
+        AlertClass = alertClass;
+        ShowMessage = true;
+    }
+
+    private void NavigateToDashboard()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+}
